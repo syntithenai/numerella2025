@@ -1,0 +1,410 @@
+<link rel="stylesheet" href="demos/demos.css" type="text/css">
+
+<!-- Dependencies -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
+<!-- Able Player CSS -->
+<link rel="stylesheet" href="build/ableplayer.min.css" type="text/css"/>
+
+<!-- Able Player JavaScript -->
+<script src="build/ableplayer.js"></script>
+
+<audio id="audio1" width="480" preload="auto" data-able-player data-skin="2020" loop>
+			<!-- source elements are optional when there's a playlist. -->
+			<!-- If ommitted, they will be constructed from the first playlist item -->
+		</audio>
+
+		<!-- use the following markup for each playlist -->
+		<!-- an AblePlayer playlist is any <ul> with class="able-playlist" -->
+		<!-- The value of data-player must match the id of the media element -->
+		<!-- Add data-embedded to embed the playlist into the media player -->
+		<!-- see documentation for additional details about markup -->
+		<ul class="able-playlist" data-player="audio1" data-embedded>
+		
+		<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/billy wilson.mp3"></span>
+  <button>Billy Wilson</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/booth shot lincoln.mp3"></span>
+  <button>Booth Shot Lincoln</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/bound to have a little fun.mp3"></span>
+  <button>Bound to Have a Little Fun</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/breaking up christmas.mp3"></span>
+  <button>Breaking Up Christmas</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/bull at the wagon.mp3"></span>
+  <button>Bull at the Wagon</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/cherokee shuffle.mp3"></span>
+  <button>Cherokee Shuffle</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/chinqapin hunting.mp3"></span>
+  <button>Chinquapin Hunting</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/cluck old hen-001.mp3"></span>
+  <button>Cluck Old Hen (Version 1)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/cluck old hen.mp3"></span>
+  <button>Cluck Old Hen (Version 2)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/coal harbour bend-001.mp3"></span>
+  <button>Coal Harbour Bend (Version 1)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/coal harbour bend.mp3"></span>
+  <button>Coal Harbour Bend (Version 2)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/colemans march.mp3"></span>
+  <button>Coleman's March</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/cotton eyed joe.mp3"></span>
+  <button>Cotton Eyed Joe</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/ducks on the millpond.mp3"></span>
+  <button>Ducks on the Millpond</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/durangs hornpipe.mp3"></span>
+  <button>Durang's Hornpipe (Standard Version)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/durangs hornpipe via tom.mp3"></span>
+  <button>Durang's Hornpipe (via Tom)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/fortune.mp3"></span>
+  <button>Fortune</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/goodbye girls.mp3"></span>
+  <button>Goodbye Girls</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/indian corn.mp3"></span>
+  <button>Indian Corn</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/joe cresswell #1.mp3"></span>
+  <button>Joe Cresswell #1</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/john stinsen #2.mp3"></span>
+  <button>John Stinsen #2</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/josie-o.mp3"></span>
+  <button>Josie-O</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/julie anne johnson.mp3"></span>
+  <button>Julie Anne Johnson</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/june apple.mp3"></span>
+  <button>June Apple</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/katydid.mp3"></span>
+  <button>Katydid</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/kentucky winder.mp3"></span>
+  <button>Kentucky Winder</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/molly put the kettle on.mp3"></span>
+  <button>Molly Put the Kettle On</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/needlecase.mp3"></span>
+  <button>Needlecase</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/ol bob.mp3"></span>
+  <button>Ol' Bob</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/old bunch of keys.mp3"></span>
+  <button>Old Bunch of Keys</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/paddy on the hand cart.mp3"></span>
+  <button>Paddy on the Hand Cart</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/paddy wont you drink some good old cider.mp3"></span>
+  <button>Paddy, Won't You Drink Some Good Old Cider</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/polecat blues.mp3"></span>
+  <button>Polecat Blues</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/pretty little cat.mp3"></span>
+  <button>Pretty Little Cat</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/pretty little girl.mp3"></span>
+  <button>Pretty Little Girl</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/pretty polly.mp3"></span>
+  <button>Pretty Polly</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/red chook.mp3"></span>
+  <button>Red Chook</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/red prairie dawn.mp3"></span>
+  <button>Red Prairie Dawn</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/redwing.mp3"></span>
+  <button>Redwing</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/remember what i told you.mp3"></span>
+  <button>Remember What I Told You</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/road to malvern.mp3"></span>
+  <button>Road to Malvern</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/rockingham city.mp3"></span>
+  <button>Rockingham City</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/ruby.mp3"></span>
+  <button>Ruby</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/sadie at the back door.mp3"></span>
+  <button>Sadie at the Back Door</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/saint annes reel.mp3"></span>
+  <button>Saint Anne's Reel</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/sally in the garden.mp3"></span>
+  <button>Sally in the Garden</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/sally's got mud between her toes.mp3"></span>
+  <button>Sally's Got Mud Between Her Toes</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/sally will you marry me.mp3"></span>
+  <button>Sally, Will You Marry Me</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/sandy unknown 1.mp3"></span>
+  <button>Sandy (Unknown 1)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/sandy unknown 2.mp3"></span>
+  <button>Sandy (Unknown 2)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/sandy unknown 3.mp3"></span>
+  <button>Sandy (Unknown 3)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/santa annas retreat.mp3"></span>
+  <button>Santa Anna's Retreat</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/squirrel hunters.mp3"></span>
+  <button>Squirrel Hunters</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/sweet nell.mp3"></span>
+  <button>Sweet Nell</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/tater patch.mp3"></span>
+  <button>Tater Patch</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/tipping back the corn-001.mp3"></span>
+  <button>Tipping Back the Corn (Version 1)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/tipping back the corn.mp3"></span>
+  <button>Tipping Back the Corn (Version 2)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/tom bigbee waltz.mp3"></span>
+  <button>Tom Bigbee Waltz</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/valley forge.mp3"></span>
+  <button>Valley Forge</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/whiteface.mp3"></span>
+  <button>Whiteface</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/willow on the lake.mp3"></span>
+  <button>Willow on the Lake</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/worchester scottische.mp3"></span>
+  <button>Worchester Scottische</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/yellowjacket-001.mp3"></span>
+  <button>Yellowjacket (Version 1)</button>
+</li>
+<li>
+  <span class="able-source"
+    data-type="audio/mpeg"
+    data-src="./music/yellowjacket.mp3"></span>
+  <button>Yellowjacket (Version 2)</button>
+</li>
+
+</ul>
