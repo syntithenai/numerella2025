@@ -12,7 +12,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: black;
 	background-color: white;
-	font-size: 1em;
+	font-size: 1.2em;
 	line-height: 1.5em;
 }
 header {
@@ -119,4 +119,44 @@ a:hover, a:focus, a:active {
   font-weight: bold;
   color: #C00;
 }
+
+
+.able-player .able-button-handler-restart {
+  display: none !important;
+}
+.able-player .able-button-handler-rewind {
+  display: none !important;
+}
+.able-player .able-button-handler-forward {
+  display: none !important;
+}
+.able-player .able-button-handler-previous {
+  display: none !important;
+}
+.able-player .able-button-handler-next {
+  display: none !important;
+}
+.able-player .able-button-handler-preferences {
+  display: none !important;
+}
+
+.able-player .able-button-handler-play {
+  font-size: 3em !important;
+}
+.able-player .able-button-handler-volume {
+  font-size: 3em !important;
+}
+.able-player .able-button-handler-faster {
+  font-size: 3em !important;
+}
+.able-player .able-button-handler-slower {
+  font-size: 3em !important;
+}
+
+.able-now-playing
+.able-controller
+.able-playlist
+.able-status-bar
+
+
 
